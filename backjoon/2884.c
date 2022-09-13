@@ -6,8 +6,12 @@ int main() {
     scanf("%d %d", &H, &M);
 
     if (M - 45 < 0) {
-        if (H == 0) H = 23;
-        else H--;
+        if (H == 0) {
+            H = 23;
+        }
+        else {
+            H--;
+        }
         M += 15;
     }
     else {
